@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-4">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合肥安农大驾校丨青年学车</title>
+
+    <link rel="stylesheet" type="text/css" href="qcss/default.css" />
+
+    <!--必要样式-->
+    <link rel="stylesheet" type="text/css" href="qcss/bookblock.css" />
+    <!-- 自定义演示风格 -->
+    <link rel="stylesheet" type="text/css" href="qcss/demo4.css" />
+
+    <script type="text/javascript" src="qjs/modernizr.custom.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="bb-custom-wrapper">
+
+        <div id="bb-bookblock" class="bb-bookblock">
+            <div class="bb-item">
+                <div class="bb-custom-firstpage">
+                    <div class="qnxclogo"><h1>青年 学车<span>Young Learner</span></h1></div>
+                    <nav class="codrops-demos">
+                        <a href="http://www.andjx.com/about-us/" target="_blank">高校品牌</a>
+                        <a href="http://www.andjx.com/career/" target="_blank">专注学车</a>
+                        <a href="http://www.andjx.com/honors-awards/" target="_blank">服务至上</a>
+                        <a class="#" href="http://www.andjx.com/category/characteristics-of-the-class/school-campus/" target="_blank">青春校园</a>
+                        <a href="http://www.andjx.com/category/characteristics-of-the-class/business-car/" target="_blank">快捷商务</a>
+                    </nav>
+                    <nav class="codrops-nav">
+                        <a class="codrops-icon codrops-icon-prev" href="http://www.andjx.com/join-us/" target="_blank"><span>加入我们</span></a>
+                        <a class="codrops-icon codrops-icon-drop" href="http://www.andjx.com/training-venues/" target="_blank"><span>联系我们</span></a>
+                    </nav>
+                    <ul>
+                        <li>合肥安农大汽车驾驶员培训中心</li>
+                        <li>电话：0551-65326269  / 0551-65300360</li>
+                        <li>QQ客服：203200484 / 203200484@qq.com</li>
+                        <li>地址：合肥市蜀山区天湖路17号（香樟大道与天湖路交口向东100米）</li>
+                    </ul>
+                </div>
+                <div class="bb-custom-side">
+                    <img src="qimages/andjx/14.jpg">
+
+                </div>
+            </div>
+            <div class="bb-item">
+
+                <div class="bb-custom-side">
+                    <ul>“你有躁动的心，却没有同行的人”
+                        <li>青年学车 一个恣意释放青春激情的学车平台</li>
+                    </ul>
+
+                </div>
+                <div class="bb-custom-side">
+                    <img src="qimages/andjx/09.jpg">
+
+                </div>
+            </div>
+            <div class="bb-item">
+
+                <div class="bb-custom-side">
+                    <ul>“人生里的每一件事都是一种经历，学车只是远行的开始”
+                        <li>青春是一种记忆，在最美的年华里遇上你...</li>
+                    </ul>
+                </div>
+                <div class="bb-custom-side">
+                    <img src="qimages/andjx/23.jpg">
+                </div>
+            </div>
+            <div class="bb-item">
+                <div class="bb-custom-side">
+                    <ul>“不只是学车，更像是一种生活”
+                        <li>青年学车，更懂年轻人，亦师亦友学车更轻松！</li>
+                    </ul>
+                </div>
+                <div class="bb-custom-side">
+                    <img src="qimages/andjx/15.jpg">
+                </div>
+            </div>
+            <div class="bb-item">
+                <div class="bb-custom-side">
+                    <ul>“青年学车，掌握驾驶技能的最美丽时刻”
+                        <li>青年学车，让学车更简单更快乐...</li>
+                    </ul>
+                </div>
+                <div class="bb-custom-side">
+                    <img src="qimages/andjx/25.jpg">
+                </div>
+            </div>
+            <div class="bb-item">
+                <img src="qimages/andjx/24.jpg" class="endimg">
+            </div>
+
+        </div>
+
+        <nav>
+            <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+            <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+            <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+            <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+        </nav>
+
+    </div>
+
+</div><!-- /container -->
+<script type="text/javascript" src="qjs/jquery.min.js"></script>
+<script type="text/javascript" src="qjs/jquerypp.custom.js"></script>
+<script type="text/javascript" src="qjs/jquery.bookblock.js"></script>
+<script type="text/javascript">
+    var Page = (function() {
+
+        var config = {
+                    $bookBlock : $( '#bb-bookblock' ),
+                    $navNext : $( '#bb-nav-next' ),
+                    $navPrev : $( '#bb-nav-prev' ),
+                    $navFirst : $( '#bb-nav-first' ),
+                    $navLast : $( '#bb-nav-last' )
+                },
+                init = function() {
+                    config.$bookBlock.bookblock( {
+                        speed : 1000,
+                        shadowSides : 0.8,
+                        shadowFlip : 0.4
+                    } );
+                    initEvents();
+                },
+                initEvents = function() {
+
+                    var $slides = config.$bookBlock.children();
+
+                    // add navigation events
+                    config.$navNext.on( 'click touchstart', function() {
+                        config.$bookBlock.bookblock( 'next' );
+                        return false;
+                    } );
+
+                    config.$navPrev.on( 'click touchstart', function() {
+                        config.$bookBlock.bookblock( 'prev' );
+                        return false;
+                    } );
+
+                    config.$navFirst.on( 'click touchstart', function() {
+                        config.$bookBlock.bookblock( 'first' );
+                        return false;
+                    } );
+
+                    config.$navLast.on( 'click touchstart', function() {
+                        config.$bookBlock.bookblock( 'last' );
+                        return false;
+                    } );
+
+                    // add swipe events
+                    $slides.on( {
+                        'swipeleft' : function( event ) {
+                            config.$bookBlock.bookblock( 'next' );
+                            return false;
+                        },
+                        'swiperight' : function( event ) {
+                            config.$bookBlock.bookblock( 'prev' );
+                            return false;
+                        }
+                    } );
+
+                    // add keyboard events
+                    $( document ).keydown( function(e) {
+                        var keyCode = e.keyCode || e.which,
+                                arrow = {
+                                    left : 37,
+                                    up : 38,
+                                    right : 39,
+                                    down : 40
+                                };
+
+                        switch (keyCode) {
+                            case arrow.left:
+                                config.$bookBlock.bookblock( 'prev' );
+                                break;
+                            case arrow.right:
+                                config.$bookBlock.bookblock( 'next' );
+                                break;
+                        }
+                    } );
+                };
+
+        return { init : init };
+
+    })();
+</script>
+<script type="text/javascript">
+    Page.init();
+</script>
+</body>
+</html>
